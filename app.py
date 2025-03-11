@@ -34,7 +34,7 @@ def hello_world():
     </head>
     <body>
         <div class="container">
-            <h1>This is a simple Flask application</h1>
+            <h1>This is a Simple Flask Application</h1>
         </div>
     </body>
     </html>
