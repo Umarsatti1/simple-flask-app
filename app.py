@@ -35,6 +35,7 @@ def hello_world():
     <body>
         <div class="container">
             <h1>This is a Simple Flask Application</h1>
+            <p>Tested successfully using AWS CodePipeline<p>
         </div>
     </body>
     </html>
