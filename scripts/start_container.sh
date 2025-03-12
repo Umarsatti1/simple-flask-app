@@ -4,12 +4,11 @@ set -e
 # Pull the latest Docker image
 docker pull umarsatti1/simple-flask-app
 
-# Check if any process is using port 5000 and stop the container
-EXISTING_CONTAINER=$(docker ps -q --filter "publish=5000")
-if [ -n "$EXISTING_CONTAINER" ]; then
-    echo "Stopping existing container using port 5000..."
-    docker stop "$EXISTING_CONTAINER"
-    docker rm "$EXISTING_CONTAINER"
+# Check if the container exists and remove it
+if docker ps -a --format '{{.Names}}' | grep -q "^simple-flask-app$"; then
+    echo "Stopping and removing existing container..."
+    docker stop simple-flask-app
+    docker rm simple-flask-app
 fi
 
 # Ensure no other process (outside Docker) is using port 5000
