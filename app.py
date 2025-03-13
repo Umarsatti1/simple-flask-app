@@ -8,7 +8,7 @@ def hello_world():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>My Flask App</title>
+        <title>My Flask Application</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -35,7 +35,7 @@ def hello_world():
     <body>
         <div class="container">
             <h1>This is a Simple Flask Application</h1>
-            <p>Tested successfully using AWS CodePipeline<p>
+            <p>Testing CI/CD Pipeline using AWS CodePipeline<p>
         </div>
     </body>
     </html>
